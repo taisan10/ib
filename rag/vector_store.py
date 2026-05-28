@@ -3,7 +3,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+
 
 load_dotenv()
 
@@ -24,10 +24,7 @@ chunks = splitter.split_documents(
 )
 
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
-
+embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001" )
 
 vector_db = FAISS.from_documents(
     chunks,

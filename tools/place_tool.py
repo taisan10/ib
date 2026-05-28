@@ -1,53 +1,14 @@
-# from langchain.tools import tool
 
-# from langchain_huggingface import HuggingFaceEmbeddings
-# from langchain_community.vectorstores import FAISS
-
-
-# embeddings = HuggingFaceEmbeddings(
-#     model_name="sentence-transformers/all-MiniLM-L6-v2"
-# )
-
-
-# db = FAISS.load_local(
-#     "faiss_index",
-#     embeddings,
-#     allow_dangerous_deserialization=True
-# )
-
-
-# retriever = db.as_retriever(
-#     search_kwargs={"k":1}
-# )
-
-
-# @tool
-# def search_places(city:str)->str:
-#     """
-#     Search travel places from vector database
-#     """
-
-#     docs = retriever.invoke(
-#         f"best places in {city}"
-#     )
-
-#     result = "\n".join(
-#         [doc.page_content for doc in docs]
-#     )
-
-#     return result
 from langchain.tools import tool
 
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
 # IMPORTANT
 from rag.data.travel_data import travel_data
 
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001" )
 
 db = FAISS.load_local(
     "faiss_index",

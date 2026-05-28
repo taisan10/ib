@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
 load_dotenv()
@@ -12,10 +12,10 @@ llm = ChatGroq(
     temperature=0
 )
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
 
+
+
+embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001" )
 
 db = FAISS.load_local(
     "faiss_index",
