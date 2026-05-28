@@ -3,12 +3,12 @@ from langchain.tools import tool
 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
-
+import os
 # IMPORTANT
 from rag.data.travel_data import travel_data
 
 
-embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001" )
+embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001", google_api_key=os.getenv("GOOGLE_API_KEY") )
 
 db = FAISS.load_local(
     "faiss_index",

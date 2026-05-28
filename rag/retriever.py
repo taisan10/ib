@@ -1,8 +1,9 @@
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+import os
 
 
-embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001" )
+embeddings = GoogleGenerativeAIEmbeddings( model="models/embedding-001", google_api_key=os.getenv("GOOGLE_API_KEY") )
 
 
 db = FAISS.load_local(
