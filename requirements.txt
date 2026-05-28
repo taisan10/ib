@@ -13,7 +13,7 @@ faiss-cpu==1.13.0
 sentence-transformers==5.1.0
 huggingface-hub==0.35.3
 
-google-genai==1.37.0
+google-genai==1.75.0
 
 pydantic==2.13.4
 python-dotenv==1.2.2
