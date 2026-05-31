@@ -1,110 +1,1032 @@
-travel_data = {
+City: Jaipur
+State: Rajasthan
 
-"Jaipur":{
-    "season":"October to March",
-    "recommended_days":"3-4",
-    "places":[
-        "Amber Fort – historic fort with light show",
-        "Hawa Mahal – iconic palace with pink architecture",
-        "City Palace – royal museum and heritage",
-        "Jal Mahal – lake-side palace",
-        "Nahargarh Fort – sunset point"
-    ],
-    "food":[
-        "Dal Baati Churma",
-        "Ghewar",
-        "Pyaaz Kachori"
-    ],
-    "tips":[
-        "Start sightseeing early morning",
-        "Use auto/cab for old city areas",
-        "Carry water during summer",
-        "Visit Nahargarh before sunset"
-    ]
-},
+Best Season:
+October to March
 
-"Goa":{
-    "season":"November to February",
-    "recommended_days":"4-5",
-    "places":[
-        "Baga Beach – nightlife and water sports",
-        "Calangute Beach – tourist hotspot",
-        "Palolem Beach – peaceful stay",
-        "Fort Aguada – sea fort",
-        "Dudhsagar Falls – scenic waterfall"
-    ],
-    "food":[
-        "Fish Curry Rice",
-        "Prawn Balchão",
-        "Bebinca dessert"
-    ],
-    "tips":[
-        "Rent a scooter for local travel",
-        "Avoid isolated beaches at night",
-        "Pre-book hotels in peak season"
-    ]
-},
+Recommended Days:
+3-4
 
-"Delhi":{
-    "season":"October to March",
-    "recommended_days":"2-4",
-    "places":[
-        "India Gate",
-        "Red Fort",
-        "Qutub Minar",
-        "Humayun Tomb",
-        "Akshardham Temple"
-    ],
-    "food":[
-        "Chandni Chowk street food",
-        "Chole Bhature",
-        "Parathe Wali Gali"
-    ],
-    "tips":[
-        "Use Delhi Metro",
-        "Avoid peak traffic hours",
-        "Keep wallet/phone secure in crowded areas"
-    ]
-},
+Places:
 
-"Mumbai":{
-    "season":"November to February",
-    "recommended_days":"3-4",
-    "places":[
-        "Gateway of India",
-        "Marine Drive",
-        "Juhu Beach",
-        "Elephanta Caves",
-        "Bandra-Worli Sea Link"
-    ],
-    "food":[
-        "Vada Pav",
-        "Pav Bhaji",
-        "Bombay Sandwich"
-    ],
-    "tips":[
-        "Avoid office rush timings",
-        "Local train is fast but crowded"
-    ]
-},
+* Amber Fort
+* Hawa Mahal
+* City Palace
+* Jal Mahal
+* Nahargarh Fort
 
-"Bengaluru":{
-    "season":"September to February",
-    "recommended_days":"2-3",
-    "places":[
-        "Cubbon Park",
-        "Lalbagh Botanical Garden",
-        "Nandi Hills",
-        "Bangalore Palace",
-        "Commercial Street"
-    ],
-    "food":[
-        "Masala Dosa",
-        "Filter Coffee"
-    ],
-    "tips":[
-        "Traffic is heavy, use metro where possible"
-    ]
-}
+Food:
 
-}
+* Dal Baati Churma
+* Ghewar
+* Pyaaz Kachori
+
+Travel Tips:
+
+* Start sightseeing early
+* Carry water in summer
+* Visit Nahargarh before sunset
+
+==================================================
+
+City: Udaipur
+State: Rajasthan
+
+Best Season:
+October to March
+
+Recommended Days:
+2-3
+
+Places:
+
+* Lake Pichola
+* City Palace
+* Fateh Sagar Lake
+* Sajjangarh Palace
+* Jag Mandir
+
+Food:
+
+* Dal Baati Churma
+* Gatte Ki Sabzi
+* Ghewar
+
+Travel Tips:
+
+* Take boat ride at sunset
+* Book lake-view hotels early
+* Carry cash for local markets
+
+==================================================
+
+City: Jaisalmer
+State: Rajasthan
+
+Best Season:
+October to February
+
+Recommended Days:
+2-3
+
+Places:
+
+* Jaisalmer Fort
+* Sam Sand Dunes
+* Patwon Ki Haveli
+* Gadisar Lake
+* Desert Safari
+
+Food:
+
+* Ker Sangri
+* Dal Baati
+* Mirchi Vada
+
+Travel Tips:
+
+* Book desert camps in advance
+* Carry sunscreen
+* Avoid afternoon desert travel
+
+==================================================
+
+City: Goa
+State: Goa
+
+Best Season:
+November to February
+
+Recommended Days:
+4-5
+
+Places:
+
+* Baga Beach
+* Calangute Beach
+* Palolem Beach
+* Fort Aguada
+* Dudhsagar Falls
+
+Food:
+
+* Fish Curry Rice
+* Prawn Balchao
+* Bebinca
+
+Travel Tips:
+
+* Rent a scooter
+* Pre-book hotels
+* Avoid isolated beaches at night
+
+==================================================
+
+City: Delhi
+State: Delhi
+
+Best Season:
+October to March
+
+Recommended Days:
+2-4
+
+Places:
+
+* India Gate
+* Red Fort
+* Qutub Minar
+* Humayun Tomb
+* Akshardham Temple
+
+Food:
+
+* Chole Bhature
+* Chaat
+* Paratha
+
+Travel Tips:
+
+* Use Metro
+* Avoid peak traffic
+* Keep valuables secure
+
+==================================================
+
+City: Mumbai
+State: Maharashtra
+
+Best Season:
+November to February
+
+Recommended Days:
+3-4
+
+Places:
+
+* Gateway of India
+* Marine Drive
+* Juhu Beach
+* Elephanta Caves
+* Colaba Causeway
+
+Food:
+
+* Vada Pav
+* Pav Bhaji
+* Bombay Sandwich
+
+Travel Tips:
+
+* Avoid rush hours
+* Use local trains carefully
+* Book hotels early
+
+==================================================
+
+City: Pune
+State: Maharashtra
+
+Best Season:
+October to February
+
+Recommended Days:
+2-3
+
+Places:
+
+* Shaniwar Wada
+* Aga Khan Palace
+* Sinhagad Fort
+* Saras Baug
+* FC Road
+
+Food:
+
+* Misal Pav
+* Vada Pav
+* Bhakarwadi
+
+Travel Tips:
+
+* Visit forts early morning
+* Use cabs for long distances
+* Carry light jackets in winter
+
+==================================================
+
+City: Bengaluru
+State: Karnataka
+
+Best Season:
+September to February
+
+Recommended Days:
+2-3
+
+Places:
+
+* Cubbon Park
+* Lalbagh
+* Bangalore Palace
+* Nandi Hills
+* Commercial Street
+
+Food:
+
+* Masala Dosa
+* Filter Coffee
+* Bisi Bele Bath
+
+Travel Tips:
+
+* Use Metro
+* Expect traffic delays
+* Visit Nandi Hills early morning
+
+==================================================
+
+City: Mysuru
+State: Karnataka
+
+Best Season:
+October to February
+
+Recommended Days:
+2
+
+Places:
+
+* Mysore Palace
+* Chamundi Hills
+* Brindavan Gardens
+* St Philomena Church
+* Zoo
+
+Food:
+
+* Mysore Pak
+* Dosa
+* Puliyogare
+
+Travel Tips:
+
+* Visit Palace in evening
+* Book tickets online
+* Carry water
+
+==================================================
+
+City: Hampi
+State: Karnataka
+
+Best Season:
+October to February
+
+Recommended Days:
+2-3
+
+Places:
+
+* Virupaksha Temple
+* Vittala Temple
+* Lotus Mahal
+* Elephant Stables
+* Hemakuta Hill
+
+Food:
+
+* South Indian Meals
+* Dosa
+* Idli
+
+Travel Tips:
+
+* Rent a bicycle
+* Carry hat and water
+* Start sightseeing early
+
+
+==================================================
+
+City: Ahmedabad
+State: Gujarat
+
+Best Season:
+November to February
+
+Recommended Days:
+4-6
+
+Places:
+- Statue of Unity
+- Rann of Kutch
+- Somnath Temple
+- Dwarkadhish Temple
+- Gir National Park
+
+Food:
+- Dhokla
+- Khandvi
+- Thepla
+
+Travel Tips:
+- Visit Rann during Rann Utsav
+- Carry sunscreen in summer
+- Book accommodations early during festivals
+
+==================================================
+
+City: Amritsar
+State: Punjab
+
+Best Season:
+October to March
+
+Recommended Days:
+3-4
+
+Places:
+- Golden Temple
+- Wagah Border
+- Jallianwala Bagh
+- Anandpur Sahib
+- Harike Wetland
+
+Food:
+- Sarson Ka Saag
+- Makki Ki Roti
+- Lassi
+
+Travel Tips:
+- Visit Golden Temple early morning
+- Respect religious customs
+- Carry warm clothes in winter
+
+==================================================
+
+City: Haryana
+
+Best Season:
+October to March
+
+Recommended Days:
+2-3
+
+Places:
+- Kurukshetra
+- Sultanpur Bird Sanctuary
+- Pinjore Gardens
+- Morni Hills
+- Kingdom of Dreams
+
+Food:
+- Bajra Roti
+- Kadhi Pakora
+- Rabri
+
+Travel Tips:
+- Visit Morni Hills in winter
+- Carry water during summer
+- Use private transport for remote areas
+
+==================================================
+
+City: Chandigarh
+
+Best Season:
+October to March
+
+Recommended Days:
+2-3
+
+Places:
+- Rock Garden
+- Sukhna Lake
+- Rose Garden
+- Elante Mall
+- Capitol Complex
+
+Food:
+- Chole Bhature
+- Butter Chicken
+- Lassi
+
+Travel Tips:
+- Rent bicycle near Sukhna Lake
+- Visit Rock Garden on weekdays
+- Follow traffic rules strictly
+
+==================================================
+
+City: Shimla
+State: Himachal Pradesh
+
+Best Season:
+March to June
+
+Recommended Days:
+5-7
+
+Places:
+- Shimla
+- Manali
+- Dharamshala
+- Kasol
+- Spiti Valley
+
+Food:
+- Siddu
+- Chana Madra
+- Babru
+
+Travel Tips:
+- Carry warm clothes
+- Check weather before mountain travel
+- Avoid driving during snowfall
+
+==================================================
+City: Dehradun
+State: Uttarakhand
+
+Best Season:
+March to June
+
+Recommended Days:
+5-7
+
+Places:
+- Nainital
+- Mussoorie
+- Rishikesh
+- Auli
+- Jim Corbett National Park
+
+Food:
+- Kafuli
+- Aloo Ke Gutke
+- Bal Mithai
+
+Travel Tips:
+- Carry trekking shoes
+- Check weather forecasts
+- Start mountain journeys early
+
+==================================================
+
+City: Uttar Pradesh
+
+Best Season:
+October to March
+
+Recommended Days:
+4-6
+
+Places:
+- Agra
+- Varanasi
+- Ayodhya
+- Lucknow
+- Prayagraj
+
+Food:
+- Tunday Kabab
+- Petha
+- Kachori Sabzi
+
+Travel Tips:
+- Use guides at historical sites
+- Keep hydrated in summer
+- Visit temples early morning
+
+
+==================================================
+
+City: Bihar
+
+Best Season:
+October to March
+
+Recommended Days:
+3-5
+
+Places:
+- Bodh Gaya
+- Nalanda
+- Rajgir
+- Patna Sahib
+- Vikramshila
+
+Food:
+- Litti Chokha
+- Thekua
+- Khaja
+
+Travel Tips:
+- Hire local guides at heritage sites
+- Use trusted transportation
+- Carry water during travel
+
+
+==================================================
+
+City: Jharkhand
+
+Best Season:
+October to March
+
+Recommended Days:
+3-4
+
+Places:
+- Ranchi
+- Dassam Falls
+- Hundru Falls
+- Betla National Park
+- Deoghar
+
+Food:
+- Dhuska
+- Rugra
+- Thekua
+
+Travel Tips:
+- Visit waterfalls during post-monsoon season
+- Carry trekking shoes
+- Keep mobile charged in forest areas
+
+
+==================================================
+
+City: Chhattisgarh
+
+Best Season:
+October to February
+
+Recommended Days:
+3-5
+
+Places:
+- Chitrakote Falls
+- Tirathgarh Falls
+- Kanger Valley National Park
+- Raipur
+- Sirpur
+
+Food:
+- Chila
+- Faraa
+- Bafauri
+
+Travel Tips:
+- Carry cash in remote regions
+- Travel in daylight for forest routes
+- Follow local safety instructions
+
+
+==================================================
+
+City: Odisha
+
+Best Season:
+October to February
+
+Recommended Days:
+4-6
+
+Places:
+- Puri
+- Konark Sun Temple
+- Chilika Lake
+- Bhubaneswar
+- Udayagiri Caves
+
+Food:
+- Dalma
+- Chhena Poda
+- Pakhala Bhata
+
+Travel Tips:
+- Visit beaches during daytime
+- Carry sunscreen
+- Book hotels early during Rath Yatra season
+
+==================================================
+
+City: West Bengal
+
+Best Season:
+October to March
+
+Recommended Days:
+4-6
+
+Places:
+- Kolkata
+- Victoria Memorial
+- Sundarbans
+- Darjeeling
+- Kalimpong
+
+Food:
+- Rosogolla
+- Macher Jhol
+- Mishti Doi
+
+Travel Tips:
+- Carry umbrella during monsoon
+- Use metro in Kolkata
+- Book Darjeeling hotels early
+
+
+==================================================
+
+City: Sikkim
+
+Best Season:
+March to June
+
+Recommended Days:
+4-6
+
+Places:
+- Gangtok
+- Tsomgo Lake
+- Nathula Pass
+- Yumthang Valley
+- Pelling
+
+Food:
+- Momos
+- Thukpa
+- Gundruk
+
+Travel Tips:
+- Carry warm clothes
+- Check permit requirements
+- Keep altitude sickness medicines
+
+
+==================================================
+
+City: Assam
+
+Best Season:
+October to April
+
+Recommended Days:
+4-6
+
+Places:
+- Kaziranga National Park
+- Guwahati
+- Kamakhya Temple
+- Majuli Island
+- Manas National Park
+
+Food:
+- Assam Thali
+- Khar
+- Masor Tenga
+
+Travel Tips:
+- Book safari tickets early
+- Carry mosquito repellent
+- Follow wildlife guidelines
+
+
+==================================================
+
+City: Arunachal Pradesh
+
+Best Season:
+October to April
+
+Recommended Days:
+5-7
+
+Places:
+- Tawang
+- Ziro Valley
+- Bomdila
+- Sela Pass
+- Namdapha National Park
+
+Food:
+- Thukpa
+- Zan
+- Bamboo Shoot Dishes
+
+Travel Tips:
+- Obtain Inner Line Permit
+- Carry warm clothing
+- Travel during daylight hours
+
+
+==================================================
+
+City: Meghalaya
+
+Best Season:
+October to April
+
+Recommended Days:
+4-5
+
+Places:
+- Shillong
+- Cherrapunji
+- Dawki
+- Living Root Bridges
+- Umiam Lake
+
+Food:
+- Jadoh
+- Dohneiiong
+- Tungrymbai
+
+Travel Tips:
+- Carry rain gear year-round
+- Wear trekking shoes
+- Book cabs in advance
+
+
+==================================================
+
+City: Manipur
+
+Best Season:
+October to March
+
+Recommended Days:
+3-5
+
+Places:
+- Loktak Lake
+- Imphal
+- Kangla Fort
+- Keibul Lamjao National Park
+- INA Memorial
+
+Food:
+- Eromba
+- Chamthong
+- Nga Thongba
+
+Travel Tips:
+- Carry ID proof
+- Check local travel advisories
+- Use local guides
+
+
+==================================================
+
+City: Mizoram
+
+Best Season:
+October to March
+
+Recommended Days:
+3-5
+
+Places:
+- Aizawl
+- Reiek
+- Vantawng Falls
+- Phawngpui Peak
+- Tamdil Lake
+
+Food:
+- Bai
+- Bamboo Shoot Curry
+- Sawhchiar
+
+Travel Tips:
+- Carry cash in remote areas
+- Travel during daylight
+- Keep warm clothing
+
+
+==================================================
+
+City: Nagaland
+
+Best Season:
+October to May
+
+Recommended Days:
+4-5
+
+Places:
+- Kohima
+- Dzukou Valley
+- Kisama Heritage Village
+- Mokokchung
+- Japfu Peak
+
+Food:
+- Smoked Pork
+- Bamboo Shoot Curry
+- Axone Dishes
+
+Travel Tips:
+- Carry trekking gear
+- Respect local customs
+- Confirm permit requirements
+
+
+==================================================
+
+City: Tripura
+
+Best Season:
+October to March
+
+Recommended Days:
+3-4
+
+Places:
+- Ujjayanta Palace
+- Neermahal
+- Unakoti
+- Sepahijala Wildlife Sanctuary
+- Agartala
+
+Food:
+- Mui Borok
+- Chakhwi
+- Fish Curry
+
+Travel Tips:
+- Carry identity documents
+- Visit heritage sites early
+- Use local transportation
+
+==================================================
+
+City: Jammu and Kashmir
+
+Best Season:
+April to October
+
+Recommended Days:
+5-7
+
+Places:
+- Srinagar
+- Gulmarg
+- Pahalgam
+- Sonmarg
+- Dal Lake
+
+Food:
+- Rogan Josh
+- Yakhni
+- Kahwa
+
+Travel Tips:
+- Carry warm clothes
+- Check weather forecasts
+- Book hotels in advance
+
+
+==================================================
+
+City: Ladakh
+
+Best Season:
+May to September
+
+Recommended Days:
+5-8
+
+Places:
+- Pangong Lake
+- Nubra Valley
+- Leh Palace
+- Magnetic Hill
+- Khardung La
+
+Food:
+- Thukpa
+- Momos
+- Butter Tea
+
+Travel Tips:
+- Acclimatize before sightseeing
+- Stay hydrated
+- Carry warm clothing
+
+
+==================================================
+
+City: Puducherry
+
+Best Season:
+October to March
+
+Recommended Days:
+2-4
+
+Places:
+- Promenade Beach
+- Auroville
+- Paradise Beach
+- French Quarter
+- Basilica Church
+
+Food:
+- French Cuisine
+- Seafood
+- South Indian Meals
+
+Travel Tips:
+- Rent a scooter
+- Carry sunscreen
+- Visit beaches early morning
+
+
+==================================================
+
+City: Andaman and Nicobar Islands
+
+Best Season:
+November to April
+
+Recommended Days:
+4-7
+
+Places:
+- Havelock Island
+- Radhanagar Beach
+- Cellular Jail
+- Ross Island
+- Neil Island
+
+Food:
+- Seafood
+- Coconut Based Dishes
+- Fish Curry
+
+Travel Tips:
+- Book ferries early
+- Carry beach essentials
+- Avoid monsoon travel
+
+
+==================================================
+
+City: Dadra and Nagar Haveli and Daman and Diu
+
+Best Season:
+October to March
+
+Recommended Days:
+2-4
+
+Places:
+- Daman Beach
+- Devka Beach
+- Fort of Diu
+- Jampore Beach
+- Mirasol Lake
+
+Food:
+- Seafood
+- Gujarati Thali
+- Portuguese Influenced Dishes
+
+Travel Tips:
+- Carry sunscreen
+- Visit beaches in evening
+- Book hotels during holidays
+
+
+==================================================
+
+City: Lakshadweep
+
+Best Season:
+October to March
+
+Recommended Days:
+4-6
+
+Places:
+- Agatti Island
+- Bangaram Island
+- Kavaratti
+- Minicoy Island
+- Marine Museum
+
+Food:
+- Tuna Dishes
+- Coconut Curry
+- Seafood
+
+Travel Tips:
+- Obtain travel permits
+- Book accommodation early
+- Respect marine ecosystem
+
+

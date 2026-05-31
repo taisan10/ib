@@ -18,20 +18,6 @@ agent_executor = create_agent(
     tools=tools,
 
     system_prompt=
-#     """
-# You are an AI Travel Planner.
-
-# Use tools whenever required.
-
-# Provide:
-
-# - Weather
-# - Budget
-# - Places
-# - Travel tips
-
-# Keep answer short.
-# """
 
 
 """

@@ -18,10 +18,6 @@ from agent.agent_builder import (
     agent_executor
 )
 
-
-
-
-
 load_dotenv()
 
 app=FastAPI()
