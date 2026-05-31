@@ -1,21 +1,16 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
-
 from langchain_groq import ChatGroq
-
 from services.travel_service import create_context
-
 from models.travel_request import TravelRequest
-
-from memory.session_memory import (
-    save_message,
-    get_history
-)
-
 from fastapi.middleware.cors import CORSMiddleware
-
 from agent.agent_builder import (
     agent_executor
+)
+
+from database.chat_db import (
+    save_message,
+    get_history
 )
 
 load_dotenv()
@@ -47,7 +42,7 @@ def home():
     }
 
 @app.post("/travel")
-def travel(
+async def travel(
     data:TravelRequest
 ):
 
@@ -58,17 +53,37 @@ def travel(
     )
 
 
-    history=get_history(
+    history= await get_history(
       data.session_id
 )
 
     
-    result = agent_executor.invoke(
-    {
-        "messages":[
-            (
-                "human",
-               f"""
+#     result = agent_executor.invoke(
+#     {
+#         "messages":[
+#             (
+#                 "human",
+#                f"""
+# Plan a {data.days}-day trip for {data.city}.
+
+# Mandatory format:
+
+# Trip Summary:
+# Weather:
+# Budget:
+# Places:
+# Travel Tips:
+
+# Always use tool information.
+# Never skip Weather, Budget or Places.
+# """
+#             )
+#         ]
+#     }
+# )
+
+    result = agent_executor.run(
+    f"""
 Plan a {data.days}-day trip for {data.city}.
 
 Mandatory format:
@@ -79,22 +94,21 @@ Budget:
 Places:
 Travel Tips:
 
-Always use tool information.
-Never skip Weather, Budget or Places.
+Always use tools.
 """
-            )
-        ]
-    }
 )
-    response = result["messages"][-1].content
+    
 
-    save_message(
+    # response = result["messages"][-1].content
+    response = result
+
+    await save_message(
         data.session_id,
         "Human",
         f"{data.city} for {data.days} days"
     )
 
-    save_message(
+    await save_message(
         data.session_id,
         "AI",
         response

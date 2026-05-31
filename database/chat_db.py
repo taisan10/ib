@@ -1,29 +1,35 @@
-import sqlite3
+from database.mongodb import chat_collection
 
 
-conn = sqlite3.connect(
-    "chat.db",
-    check_same_thread=False
-)
+async def save_message(
+    session_id,
+    role,
+    message
+):
+    await chat_collection.insert_one({
+        "session_id": session_id,
+        "role": role,
+        "message": message
+    })
 
 
-cursor = conn.cursor()
+async def get_history(
+    session_id
+):
 
+    cursor = chat_collection.find(
+        {
+            "session_id": session_id
+        }
+    )
 
-cursor.execute(
-"""
-CREATE TABLE IF NOT EXISTS chats(
+    history = []
 
-id INTEGER PRIMARY KEY AUTOINCREMENT,
+    async for chat in cursor:
 
-session_id TEXT,
+        history.append({
+            "role": chat["role"],
+            "message": chat["message"]
+        })
 
-role TEXT,
-
-message TEXT
-
-)
-"""
-)
-
-conn.commit()
+    return "\n".join(history)
