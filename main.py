@@ -13,57 +13,49 @@ from agent.agent_builder import (
     agent_executor
 )
 
-
-
-
-
 load_dotenv()
 
-app=FastAPI()
+app = FastAPI()
 
 app.add_middleware(
-
     CORSMiddleware,
-
     allow_origins=["*"],
-
     allow_credentials=True,
-
     allow_methods=["*"],
-
     allow_headers=["*"]
-
 )
+
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
     temperature=0
 )
 
 
+@app.get("/")
+def home():
+    return {"status": "running"}
+
+
 @app.post("/travel")
-def travel(
-    
-    data:TravelRequest
+async def travel(         
+    data: TravelRequest
 ):
 
-
-    context=create_context(
+    context = create_context(
         city=data.city,
         days=data.days
     )
 
+    history = await get_history(  
+        data.session_id
+    )
 
-    history=get_history(
-      data.session_id
-)
-
-    
     result = agent_executor.invoke(
-    {
-        "messages":[
-            (
-                "human",
-               f"""
+        {
+            "messages": [
+                (
+                    "human",
+                    f"""
 Plan a {data.days}-day trip for {data.city}.
 
 Mandatory format:
@@ -77,25 +69,34 @@ Travel Tips:
 Always use tool information.
 Never skip Weather, Budget or Places.
 """
-            )
-        ]
-    }
-)
+                )
+            ]
+        }
+    )
+
     response = result["messages"][-1].content
 
-    save_message(
+    await save_message(          
         data.session_id,
         "Human",
         f"{data.city} for {data.days} days"
     )
 
-    save_message(
+    await save_message(           
         data.session_id,
         "AI",
         response
     )
 
     return {
-    "answer": response,
-    "city": data.city
-}
+        "answer": response,
+        "city": data.city
+    }
+
+@app.get("/debug")
+async def debug():
+    import os
+    return {
+        "db_name": os.getenv("DATABASE_NAME"),
+        "mongo_uri": os.getenv("MONGODB_URI")[:20]  # sirf starting dikhega
+    }

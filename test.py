@@ -1,18 +1,21 @@
-# from config.vector_db import retriever
+# test.py
+import asyncio
+import certifi
+from motor.motor_asyncio import AsyncIOMotorClient
+from dotenv import load_dotenv
+import os
 
-# docs = retriever.invoke(
-#     "best places in Gujarat"
-# )
+load_dotenv()
 
-# for doc in docs:
-#     print(doc.page_content)
-
-
-from services.travel_service import create_context
-
-print(
-    create_context(
-        city="Pune",
-        days=4
+async def test():
+    client = AsyncIOMotorClient(
+        os.getenv("MONGODB_URI"),
+        tlsCAFile=certifi.where()
     )
-)
+    try:
+        await client.admin.command("ping")
+        print("✅ MongoDB connected!")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+
+asyncio.run(test())

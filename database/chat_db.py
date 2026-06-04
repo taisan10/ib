@@ -27,9 +27,8 @@ async def get_history(
 
     async for chat in cursor:
 
-        history.append({
-            "role": chat["role"],
-            "message": chat["message"]
-        })
+        history.append(
+            f"{chat['role']}: {chat['message']}"  # ✅ Fix: dict ko string mein convert karo
+        )
 
     return "\n".join(history)
