@@ -3,28 +3,16 @@ from tools.budget_tool import estimate_budget
 from tools.place_tool import search_places
 
 def create_context(
-    city:str,
-    days:int
+    city: str,
+    days: int
 ):
 
+    weather = get_weather.invoke(city)
 
-    weather = get_weather.invoke(
-        city
-    )
+    # ✅ Fix: string format "city,days" pass karo, dict nahi
+    budget = estimate_budget.invoke(f"{city},{days}")
 
-
-    budget = estimate_budget.invoke(
-        {
-            "city":city,
-            "days":days
-        }
-    )
-
-
-    places = search_places.invoke(
-        city
-    )
-
+    places = search_places.invoke(city)
 
     final_context = f"""
 Weather:
@@ -36,6 +24,5 @@ Budget:
 Travel Data:
 {places}
 """
-
 
     return final_context
