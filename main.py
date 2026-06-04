@@ -6,12 +6,7 @@ from langchain_groq import ChatGroq
 from services.travel_service import create_context
 
 from models.travel_request import TravelRequest
-
-from memory.session_memory import (
-    save_message,
-    get_history
-)
-
+from database.chat_db import save_message, get_history
 from fastapi.middleware.cors import CORSMiddleware
 
 from agent.agent_builder import (
