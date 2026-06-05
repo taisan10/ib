@@ -140,6 +140,7 @@ app.add_middleware(
       allow_origins=[
        
         "https://ai-tour-guider.vercel.app/",  
+        "*"
         
     ],
     allow_credentials=True,
